@@ -60,7 +60,7 @@ namespace GrpcService.Services
 		private static async Task<Wheather> GetCurrentTemperaturesAsync(HttpClient httpClient)
 		{
 			var response = await httpClient.GetStringAsync(
-				"http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=273bb8ec24982dcc229dd496fd3ebf1f");
+				"");
 			////await responseStream.WriteAsync(new TrackReply({Message = }));
 
 			var temp = Wheather.FromJson(response);
