@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZhPkGbyMpWyAlrvGxwoJRxhmnqbRXd8M/42n8/NaZ5e/tf7ckDLbUsInRtQSqsQv7NTMefq6I/0MZ0gKFQZkPQ==",
+  "success": true,
+  "projectFilePath": "D:\\GrpcService\\GrpcService1\\MusicStreaming.Core\\MusicStreaming.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Akvelon\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

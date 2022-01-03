@@ -1,0 +1,6 @@
+C:\Users\Akvelon\source\repos\GrpcService1\GrpcService1\obj\Debug\net5.0\GrpcService1.csproj.AssemblyReference.cache
+C:\Users\Akvelon\source\repos\GrpcService1\GrpcService1\obj\Debug\net5.0\GrpcService1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akvelon\source\repos\GrpcService1\GrpcService1\obj\Debug\net5.0\GrpcService1.AssemblyInfoInputs.cache
+C:\Users\Akvelon\source\repos\GrpcService1\GrpcService1\obj\Debug\net5.0\GrpcService1.AssemblyInfo.cs
+C:\Users\Akvelon\source\repos\GrpcService1\GrpcService1\obj\Debug\net5.0\GrpcService1.csproj.CoreCompileInputs.cache
+C:\Users\Akvelon\source\repos\GrpcService1\GrpcService1\obj\Debug\net5.0\GrpcService1.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Server";
+
+import "google/protobuf/timestamp.proto";
+
+package weather;
+
+// The greeting service definition.
+service WeatherService {
+  // Sends a greeting
+  rpc GetCurrentWeather (GetCurrentWeatherforCityRequest) returns (WeatherResponse);
+  rpc GetCurrentWeatherStream (GetCurrentWeatherforCityRequest) returns (stream WeatherResponse);
+}
+
+// The request message containing the user's name.
+message GetCurrentWeatherforCityRequest {
+}
+
+message WeatherResponse{
+	double temperature = 1;
+	double feels_like = 2;
+	google.protobuf.Timestamp timestamp = 3;
+}
+

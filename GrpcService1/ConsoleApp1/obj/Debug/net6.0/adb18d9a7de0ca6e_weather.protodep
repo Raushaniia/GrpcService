@@ -1,0 +1,3 @@
+obj\Debug\net6.0/Weather.cs \
+obj\Debug\net6.0/WeatherGrpc.cs: C:/Users/Akvelon/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/timestamp.proto\
+ ../GrpcService1/Protos/weather.proto

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "86b6fb4c-621a-412f-9ca6-56760bf0bec1": {
+      "ProjectGuid": "86b6fb4c-621a-412f-9ca6-56760bf0bec1",
+      "DisplayName": "GrpcService",
+      "ColorIndex": 0
+    },
+    "bde9300b-cc03-440f-a50a-dd0b884f73d5": {
+      "ProjectGuid": "bde9300b-cc03-440f-a50a-dd0b884f73d5",
+      "DisplayName": "ConsoleApp1",
+      "ColorIndex": 1
+    },
+    "ba88b353-78f7-4812-a127-85bc6023ce9d": {
+      "ProjectGuid": "ba88b353-78f7-4812-a127-85bc6023ce9d",
+      "DisplayName": "MusicStreaming.Core",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
