@@ -12,17 +12,29 @@ using GrpcService.Server;
 //Console.WriteLine(reply2);
 
 var channel = GrpcChannel.ForAddress("http://localhost:5298");
-var client = new WeatherService.WeatherServiceClient(channel);
+var client = new PostNewsService.PostNewsServiceClient(channel);
 
 //var reply2 = client.GetCurrentWeather(new GetCurrentWeatherforCityRequest ());
-using var reply2 = client.GetCurrentWeatherStream(new GetCurrentWeatherforCityRequest());
+using var reply2 = client.GetNewsStream(new GetNewsForRequest());
 
 while (await reply2.ResponseStream.MoveNext(CancellationToken.None))
 {
-	Console.WriteLine("Temperature: " + reply2.ResponseStream.Current.Temperature);
-	Console.WriteLine("Timestamp: " + reply2.ResponseStream.Current.Timestamp);
+	Console.WriteLine("Temperature: " + reply2.ResponseStream.Current.Title);
+	Console.WriteLine("Timestamp: " + reply2.ResponseStream.Current.Description);
 	// "Greeting: Hello World" is written multiple times
 }
+
+//var client = new WeatherService.WeatherServiceClient(channel);
+
+////var reply2 = client.GetCurrentWeather(new GetCurrentWeatherforCityRequest ());
+//using var reply2 = client.GetCurrentWeatherStream(new GetCurrentWeatherforCityRequest());
+
+//while (await reply2.ResponseStream.MoveNext(CancellationToken.None))
+//{
+//	Console.WriteLine("Temperature: " + reply2.ResponseStream.Current.Temperature);
+//	Console.WriteLine("Timestamp: " + reply2.ResponseStream.Current.Timestamp);
+//	// "Greeting: Hello World" is written multiple times
+//}
 
 //await foreach (var response in reply2.ResponseStream)
 //{

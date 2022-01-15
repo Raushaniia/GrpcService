@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Server";
+
+import "google/protobuf/timestamp.proto";
+
+package news;
+
+// The greeting service definition.
+service PostNewsService {
+	// Sends a greeting
+	rpc GetNews (GetNewsForRequest) returns (NewsResponse);
+	rpc GetNewsStream (GetNewsForRequest) returns (stream NewsResponse);
+}
+
+// The request message containing the user's name.
+message GetNewsForRequest {
+}
+
+message NewsResponse{
+	string description = 1;
+	string title = 2;
+	google.protobuf.Timestamp timestamp = 3;
+}

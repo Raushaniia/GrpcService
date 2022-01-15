@@ -1,5 +1,7 @@
-using GrpcService.Server;
+
+using GrpcService.Services;
 using WeatherService = GrpcService.Services.WeatherService;
+using PostNewsService = GrpcService.Services.PostNewsService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +17,8 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline. 
 //app.MapGrpcService<GreeterService>();
-app.MapGrpcService<WeatherService>();
+//app.MapGrpcService<WeatherService>();
+app.MapGrpcService<PostNewsService>();
 app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
 
 

@@ -48,7 +48,7 @@ namespace GrpcService.Services
 				var temp = await GetCurrentTemperaturesAsync(httpClient);
 				await responseStream.WriteAsync(
 					new WeatherResponse
-					{            
+					{
 						Temperature = temp!.List.First().Main.Temp,
 						FeelsLike = temp.List.First().Main.FeelsLike,
 						Timestamp = Timestamp.FromDateTime(DateTime.UtcNow)

@@ -96,5 +96,5 @@ D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\MusicStreaming.Player.d
 D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\GrpcService.pdb
 D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\MusicStreaming.Player.pdb
 D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\MusicStreaming.Core.pdb
-D:\GrpcService\GrpcService1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CopyComplete
 D:\GrpcService\GrpcService1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
+D:\GrpcService\GrpcService1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CopyComplete
