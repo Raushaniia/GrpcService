@@ -56,12 +56,12 @@ namespace NewsStreaming.Core
 
     public partial class NewsData
     {
-        public static NewsData FromJson(string json) => JsonConvert.DeserializeObject<NewsData>(json, MusicStreaming.Core.Converter.Settings);
+        public static NewsData FromJson(string json) => JsonConvert.DeserializeObject<NewsData>(json, NewsStreaming.Core.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this NewsData self) => JsonConvert.SerializeObject(self, MusicStreaming.Core.Converter.Settings);
+        public static string ToJson(this NewsData self) => JsonConvert.SerializeObject(self, NewsStreaming.Core.Converter.Settings);
     }
 
     internal static class Converter

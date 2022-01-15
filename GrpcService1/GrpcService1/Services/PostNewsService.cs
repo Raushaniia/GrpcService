@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Google.Protobuf.WellKnownTypes;
+﻿using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using MusicStreaming.Core;
-using System.Text.Json;
-using Google.Protobuf.WellKnownTypes;
-using Grpc.Core;
-using Grpc.Net.Client;
-using GrpcService.Server;
-using MusicStreaming.Core;
 using NewsStreaming.Core;
+using GrpcService.Server;
 
 namespace GrpcService.Services
 {
@@ -22,7 +12,6 @@ namespace GrpcService.Services
 		public PostNewsService(IHttpClientFactory httpClientFactory)
 		{
 			_httpClientFactory = httpClientFactory;
-
 		}
 
 		public override async Task<NewsResponse> GetNews(GetNewsForRequest request, ServerCallContext context)
@@ -41,18 +30,18 @@ namespace GrpcService.Services
 				Title = temp.News.First().Title,
 				Timestamp = Timestamp.FromDateTime(DateTime.UtcNow)
 			};
-
-
 		}
 
 		public override async Task GetNewsStream(GetNewsForRequest request, IServerStreamWriter<NewsResponse> responseStream,
 			ServerCallContext context)
 		{
 			var httpClient = _httpClientFactory.CreateClient();
-			var ct = new CancellationToken();
+			var contextCancellationToken = context.CancellationToken;
 
-			for (int i = 0; i < 30; i++)
+			while(true)
 			{
+				if (contextCancellationToken.IsCancellationRequested) return;
+
 				var temp = await GetCurrentNewsAsync(httpClient);
 				await responseStream.WriteAsync(
 					new NewsResponse
@@ -68,6 +57,7 @@ namespace GrpcService.Services
 		private static async Task<NewsData> GetCurrentNewsAsync(HttpClient httpClient)
 		{
 			var response = await httpClient.GetStringAsync(
+				//"");
 				"https://api.currentsapi.services/v1/search?keywords=virus&limit=1&apiKey=-eUpWubJIoT_9BPcc072BRq3e2zHcYOID5q_ZfpZXoNsTqQ0");
 			////await responseStream.WriteAsync(new TrackReply({Message = }));
 

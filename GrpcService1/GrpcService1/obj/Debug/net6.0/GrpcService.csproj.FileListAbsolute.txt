@@ -18,8 +18,6 @@ D:\GrpcService\GrpcService1\GrpcService1\bin\Debug\net6.0\Microsoft.AspNetCore.J
 D:\GrpcService\GrpcService1\GrpcService1\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\GrpcService\GrpcService1\GrpcService1\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\GrpcService\GrpcService1\GrpcService1\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
-D:\GrpcService\GrpcService1\GrpcService1\bin\Debug\net6.0\MusicStreaming.Core.dll
-D:\GrpcService\GrpcService1\GrpcService1\bin\Debug\net6.0\MusicStreaming.Core.pdb
 D:\GrpcService\GrpcService1\GrpcService1\obj\Debug\net6.0\GrpcService.GeneratedMSBuildEditorConfig.editorconfig
 D:\GrpcService\GrpcService1\GrpcService1\obj\Debug\net6.0\GrpcService.AssemblyInfoInputs.cache
 D:\GrpcService\GrpcService1\GrpcService1\obj\Debug\net6.0\GrpcService.AssemblyInfo.cs
@@ -33,4 +31,5 @@ D:\GrpcService\GrpcService1\GrpcService1\obj\Debug\net6.0\ref\GrpcService.dll
 D:\GrpcService\GrpcService1\GrpcService1\obj\Debug\net6.0\GrpcService.pdb
 D:\GrpcService\GrpcService1\GrpcService1\obj\Debug\net6.0\GrpcService.genruntimeconfig.cache
 D:\GrpcService\GrpcService1\GrpcService1\obj\Debug\net6.0\GrpcService.csproj.AssemblyReference.cache
-D:\GrpcService\GrpcService1\GrpcService1\obj\Debug\net6.0\GrpcService.csproj.CopyComplete
+D:\GrpcService\GrpcService1\GrpcService1\bin\Debug\net6.0\NewsStreaming.Core.dll
+D:\GrpcService\GrpcService1\GrpcService1\bin\Debug\net6.0\NewsStreaming.Core.pdb

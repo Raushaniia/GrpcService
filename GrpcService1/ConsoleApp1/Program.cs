@@ -1,46 +1,32 @@
 ﻿using Grpc.Net.Client;
 using GrpcService.Services;
 using GrpcService.Server;
-
-//var channel = GrpcChannel.ForAddress("http://localhost:5298");
-//var client = new Greeter.GreeterClient(channel);
-
-////var reply = client.SayHello(new HelloRequest { Name = "test" });
-
-//var reply2 = client.SendTrack(new TrackRequest { Name = "test" });
-
-//Console.WriteLine(reply2);
+using Grpc.Core;
 
 var channel = GrpcChannel.ForAddress("http://localhost:5298");
 var client = new PostNewsService.PostNewsServiceClient(channel);
 
-//var reply2 = client.GetCurrentWeather(new GetCurrentWeatherforCityRequest ());
-using var reply2 = client.GetNewsStream(new GetNewsForRequest());
+using var replies = client.GetNewsStream(new GetNewsForRequest());
 
-while (await reply2.ResponseStream.MoveNext(CancellationToken.None))
+var tokenSource = new CancellationTokenSource();
+int n = 0;
+
+try
 {
-	Console.WriteLine("Temperature: " + reply2.ResponseStream.Current.Title);
-	Console.WriteLine("Timestamp: " + reply2.ResponseStream.Current.Description);
-	// "Greeting: Hello World" is written multiple times
+	await foreach (var reply in replies.ResponseStream.ReadAllAsync(tokenSource.Token))
+	{
+		Console.WriteLine("Title: " + reply.Title);
+		Console.WriteLine("Description: " + reply.Description);
+
+		if (++n == 2)
+		{
+			tokenSource.Cancel();
+		}
+	}
+}
+catch (RpcException e) when (e.Status.StatusCode == StatusCode.Cancelled)
+{
+	Console.WriteLine("Streaming was cancelled from the client!");
 }
 
-//var client = new WeatherService.WeatherServiceClient(channel);
-
-////var reply2 = client.GetCurrentWeather(new GetCurrentWeatherforCityRequest ());
-//using var reply2 = client.GetCurrentWeatherStream(new GetCurrentWeatherforCityRequest());
-
-//while (await reply2.ResponseStream.MoveNext(CancellationToken.None))
-//{
-//	Console.WriteLine("Temperature: " + reply2.ResponseStream.Current.Temperature);
-//	Console.WriteLine("Timestamp: " + reply2.ResponseStream.Current.Timestamp);
-//	// "Greeting: Hello World" is written multiple times
-//}
-
-//await foreach (var response in reply2.ResponseStream)
-//{
-//	Console.WriteLine("Greeting: " + (double)response.Temperature);
-//	// "Greeting: Hello World" is written multiple times
-//}
-
-//Console.WriteLine((double)reply2.Temperature);
-//Console.WriteLine((double)reply2.FeelsLike);
+Console.ReadLine();

@@ -80,8 +80,7 @@ D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\Microsoft.AspNetCore.Mv
 D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\GrpcService.dll
-D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\MusicStreaming.Core.dll
 D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\GrpcService.pdb
-D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\MusicStreaming.Core.pdb
 D:\GrpcService\GrpcService1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
-D:\GrpcService\GrpcService1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CopyComplete
+D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\NewsStreaming.Core.dll
+D:\GrpcService\GrpcService1\ConsoleApp1\bin\Debug\net6.0\NewsStreaming.Core.pdb

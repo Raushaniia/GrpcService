@@ -196,18 +196,18 @@
         "dependencies": {
           "Grpc.AspNetCore": "2.40.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.1",
-          "MusicStreaming.Core": "1.0.0"
+          "NewsStreaming.Core": "1.0.0"
         },
         "runtime": {
           "GrpcService.dll": {}
         }
       },
-      "MusicStreaming.Core/1.0.0": {
+      "NewsStreaming.Core/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
-          "MusicStreaming.Core.dll": {}
+          "NewsStreaming.Core.dll": {}
         }
       }
     }
@@ -398,7 +398,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MusicStreaming.Core/1.0.0": {
+    "NewsStreaming.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
