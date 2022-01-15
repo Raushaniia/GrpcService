@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GrpcService1\GrpcService.csproj" />
-    <ProjectReference Include="..\MusicStreaming.Player\MusicStreaming.Player.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31727.386
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcService", "GrpcService1\GrpcService.csproj", "{86B6FB4C-621A-412F-9CA6-56760BF0BEC1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{BDE9300B-CC03-440F-A50A-DD0B884F73D5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStreaming.Core", "MusicStreaming.Core\MusicStreaming.Core.csproj", "{BA88B353-78F7-4812-A127-85BC6023CE9D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStreaming.Player", "MusicStreaming.Player\MusicStreaming.Player.csproj", "{EFAF6126-EA39-49AA-BD43-936B312D6837}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{BA88B353-78F7-4812-A127-85BC6023CE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA88B353-78F7-4812-A127-85BC6023CE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA88B353-78F7-4812-A127-85BC6023CE9D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFAF6126-EA39-49AA-BD43-936B312D6837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFAF6126-EA39-49AA-BD43-936B312D6837}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFAF6126-EA39-49AA-BD43-936B312D6837}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFAF6126-EA39-49AA-BD43-936B312D6837}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
