@@ -53,9 +53,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GrpcService\\GrpcService1\\MusicStreaming.Core\\MusicStreaming.Core.csproj",
-      "projectName": "MusicStreaming.Core",
-      "projectPath": "D:\\GrpcService\\GrpcService1\\MusicStreaming.Core\\MusicStreaming.Core.csproj",
+      "projectUniqueName": "D:\\GrpcService\\GrpcService1\\MusicStreaming.Core\\NewsStreaming.Core.csproj",
+      "projectName": "NewsStreaming.Core",
+      "projectPath": "D:\\GrpcService\\GrpcService1\\MusicStreaming.Core\\NewsStreaming.Core.csproj",
       "packagesPath": "C:\\Users\\Akvelon\\.nuget\\packages\\",
       "outputPath": "D:\\GrpcService\\GrpcService1\\MusicStreaming.Core\\obj\\",
       "projectStyle": "PackageReference",

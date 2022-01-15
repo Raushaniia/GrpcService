@@ -305,7 +305,7 @@
         "dependencies": {
           "Grpc.AspNetCore": "2.40.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.1",
-          "MusicStreaming.Core": "1.0.0"
+          "NewsStreaming.Core": "1.0.0"
         },
         "compile": {
           "bin/placeholder/GrpcService.dll": {}
@@ -317,17 +317,17 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "MusicStreaming.Core/1.0.0": {
+      "NewsStreaming.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "bin/placeholder/MusicStreaming.Core.dll": {}
+          "bin/placeholder/NewsStreaming.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MusicStreaming.Core.dll": {}
+          "bin/placeholder/NewsStreaming.Core.dll": {}
         }
       }
     }
@@ -888,10 +888,10 @@
       "path": "../GrpcService1/GrpcService.csproj",
       "msbuildProject": "../GrpcService1/GrpcService.csproj"
     },
-    "MusicStreaming.Core/1.0.0": {
+    "NewsStreaming.Core/1.0.0": {
       "type": "project",
-      "path": "../MusicStreaming.Core/MusicStreaming.Core.csproj",
-      "msbuildProject": "../MusicStreaming.Core/MusicStreaming.Core.csproj"
+      "path": "../MusicStreaming.Core/NewsStreaming.Core.csproj",
+      "msbuildProject": "../MusicStreaming.Core/NewsStreaming.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {

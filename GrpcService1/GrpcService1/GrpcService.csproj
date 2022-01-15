@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MusicStreaming.Core\MusicStreaming.Core.csproj" />
+    <ProjectReference Include="..\MusicStreaming.Core\NewsStreaming.Core.csproj" />
   </ItemGroup>
 
 </Project>

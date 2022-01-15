@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using MusicStreaming.Core;
-using News.Core;
 using System.Text.Json;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Grpc.Net.Client;
 using GrpcService.Server;
 using MusicStreaming.Core;
+using NewsStreaming.Core;
 
 namespace GrpcService.Services
 {
