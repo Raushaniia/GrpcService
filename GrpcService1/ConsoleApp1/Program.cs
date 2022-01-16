@@ -3,13 +3,18 @@ using GrpcService.Services;
 using GrpcService.Server;
 using Grpc.Core;
 
+Console.WriteLine("Please enter the keywords below:");
+var keywords = Console.ReadLine();
+
 var channel = GrpcChannel.ForAddress("http://localhost:5298");
 var client = new PostNewsService.PostNewsServiceClient(channel);
 
-using var replies = client.GetNewsStream(new GetNewsForRequest());
+var request = new GetNewsForRequest();
+request.KeyWords = keywords;
+
+using var replies = client.GetNewsStream(request);
 
 var tokenSource = new CancellationTokenSource();
-int n = 0;
 
 try
 {
@@ -17,10 +22,17 @@ try
 	{
 		Console.WriteLine("Title: " + reply.Title);
 		Console.WriteLine("Description: " + reply.Description);
+		Console.WriteLine("TimeStamp: " + reply.Timestamp);
+		Console.WriteLine();
 
-		if (++n == 2)
+
+		if (Console.KeyAvailable)
 		{
-			tokenSource.Cancel();
+			var key = Console.ReadKey(true).Key;
+			if (key == ConsoleKey.Enter)
+			{
+				tokenSource.Cancel();
+			}
 		}
 	}
 }
